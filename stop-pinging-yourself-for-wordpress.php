@@ -17,7 +17,7 @@ Author URI: http://thisismyurl.com/
  * @link		http://wordpress.org/extend/plugins/stop-pinging-yourself-for-wordpress/
  *
  * @package 	Stop Pinging Yourself for WordPress
- * @copyright	Copyright ( c ) 2008, Chrsitopher Ross
+ * @copyright	Copyright ( c ) 2008, Christopher Ross
  * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License, v2 ( or newer )
  *
  * @since 		Stop Pinging Yourself for WordPress 1.0
