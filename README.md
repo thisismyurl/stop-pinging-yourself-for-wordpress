@@ -24,3 +24,8 @@ GPL v2 or later.
 ## Contributors
 - Christopher Ross
 - PadLabs
+
+
+---
+*This project follows the [10 Core Pillars](PILLARS.md). Support quality work [here](https://github.com/sponsors/thisismyurl).*
+
