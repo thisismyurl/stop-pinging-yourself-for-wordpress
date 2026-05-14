@@ -1,44 +1,64 @@
-=== Stop Pinging Yourself ===
-Contributors: PadLabs, christopherross
-Plugin URI: http://thisismyurl.com/downloads/stop-pinging-yourself-for-wordpress/
-Tags: pingback
-Requires at least: 3.2.0
+=== Stop Pinging Yourself for WordPress ===
+Contributors: padlabs, christopherross
+Plugin URI: https://thisismyurl.com/plugins/stop-pinging-yourself-for-wordpress/
+Tags: pingback, pings, comments, cleanup
+Requires at least: 6.4
 Tested up to: 6.9
-Stable tag: 15.01.01
+Requires PHP: 7.4
+Stable tag: 16.0.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Stops a WordPress blog from pinging itself with pingbacks
+Stops a WordPress site from sending pingbacks to itself.
 
 == Description ==
 
-Stops a WordPress blog from pinging itself with pingbacks
+Stop Pinging Yourself for WordPress removes self-referential URLs from the ping queue before WordPress sends pingbacks.
+
+It keeps external pingbacks intact while preventing noisy internal self-pings.
+
+Plugin behavior:
+
+* Hooks `pre_ping`
+* Compares outbound links against `home_url()`
+* Removes links that point to the current site
+* No settings page required
 
 == Installation ==
 
-To install the plugin, please upload the folder to your plugins folder and active the plugin. The plugin has no settings.
-
-== Updates ==
-
-Empty
+1. Upload the plugin folder to `/wp-content/plugins/`.
+2. Activate through **Plugins > Installed Plugins**.
+3. Done. No configuration needed.
 
 == Frequently Asked Questions ==
 
-Empty
+= Does this disable pingbacks completely? =
 
-== Change Log ==
+No. It only removes pingbacks where the destination is your own site.
 
+= Does this affect outgoing links to other websites? =
+
+No. External links are left untouched.
+
+== Changelog ==
+
+= 16.0.0 =
+* Complete modernization with namespace and strict types.
+* Removed legacy `thisismyurl-common.php` dependency.
+* Simplified logic to a focused `pre_ping` callback.
+* Added modern plugin headers and SPDX license metadata.
 
 = 15.01 =
+* Legacy maintenance release.
 
-* moved CSS to child directories
-* added information page for plugin
-* tested for WordPress 4.1
-* removed icon file
-* Added OOP Class structure
-* Migrated common structure for plugins
 = 1.0.0 =
-
-* Initial files
+* Initial release.
 
 == Upgrade Notice ==
 
+= 16.0.0 =
+Major internal refactor with no settings migration required.
+
 == Screenshots ==
+
+1. No UI screens. This plugin runs silently in the background.

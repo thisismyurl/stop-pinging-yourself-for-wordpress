@@ -10,16 +10,21 @@ WordPress sends a pingback every time a post links to another post — including
 
 This plugin filters self-pings before they leave the site. External pingbacks continue to work as normal.
 
+## Current implementation
+- Namespaced plugin (`ThisIsMyURL\\StopPingingYourself`) with `declare(strict_types=1)`
+- Lean `pre_ping` callback that removes URLs prefixed by `home_url()`
+- Legacy `thisismyurl-common.php` scaffold removed
+
 ## Features
 - Blocks only self-referential pingbacks.
 - Zero configuration.
 - 600+ active installs, 100% rating on WordPress.org.
 
 ## Status
-Maintenance mode. The plugin is intentionally minimal and does not need active development.
+Maintained and modernized for current WordPress/PHP baselines.
 
 ## License
-GPL v2 or later.
+GPL-2.0-or-later.
 
 ## Contributors
 - Christopher Ross
