@@ -13,6 +13,8 @@ Stops a WordPress site from sending pingbacks to itself.
 
 == Description ==
 
+ARCHIVED: This plugin is no longer actively maintained. It is provided as-is for legacy installs, and active support/testing is not guaranteed.
+
 Stop Pinging Yourself for WordPress removes self-referential URLs from the ping queue before WordPress sends pingbacks.
 
 It keeps external pingbacks intact while preventing noisy internal self-pings.
