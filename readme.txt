@@ -3,9 +3,9 @@ Contributors: padlabs, christopherross
 Plugin URI: https://thisismyurl.com/plugins/stop-pinging-yourself-for-wordpress/
 Tags: pingback, pings, comments, cleanup
 Requires at least: 6.4
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 16.0.0
+Stable tag: 16.6147
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,6 @@ Stops a WordPress site from sending pingbacks to itself.
 
 == Description ==
 
-ARCHIVED: This plugin is no longer actively maintained. It is provided as-is for legacy installs, and active support/testing is not guaranteed.
 
 Stop Pinging Yourself for WordPress removes self-referential URLs from the ping queue before WordPress sends pingbacks.
 
@@ -43,6 +42,11 @@ No. It only removes pingbacks where the destination is your own site.
 No. External links are left untouched.
 
 == Changelog ==
+
+= 16.6147 =
+* Unified plugin versioning to the x.Yddd calendar-version scheme.
+* Confirmed compatibility with WordPress 7.0.
+
 
 = 16.0.0 =
 * Complete modernization with namespace and strict types.
