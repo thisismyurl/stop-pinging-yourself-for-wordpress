@@ -1,10 +1,10 @@
 === Stop Pinging Yourself for WordPress ===
-Contributors: padlabs, christopherross
+Contributors: thisismyurl
 Plugin URI: https://thisismyurl.com/plugins/stop-pinging-yourself-for-wordpress/
 Tags: pingback, pings, comments, cleanup
 Requires at least: 6.4
 Tested up to: 7.0
-Requires PHP: 7.4
+Requires PHP: 8.0
 Stable tag: 16.6147
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -42,6 +42,11 @@ No. It only removes pingbacks where the destination is your own site.
 No. External links are left untouched.
 
 == Changelog ==
+
+= 16.6148 =
+* Raised the declared PHP floor to 8.0 to match the code's use of `str_starts_with()` (P0-2).
+* Removed the orphaned `css/` and `langs/` assets the focused `pre_ping` callback no longer uses (P3).
+* Aligned the readme Contributors slug to `thisismyurl` for line consistency (P3).
 
 = 16.6147 =
 * Unified plugin versioning to the x.Yddd calendar-version scheme.

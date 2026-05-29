@@ -5,7 +5,7 @@
  * Description:       Prevents WordPress from sending self-referential pingbacks — stops the site from pinging itself when publishing posts that link to other posts on the same domain.
  * Version:           16.6147
  * Requires at least: 6.4
- * Requires PHP:      7.4
+ * Requires PHP:      8.0
  * Author:            Christopher Ross
  * Author URI:        https://thisismyurl.com/
  * License:           GPL-2.0-or-later
