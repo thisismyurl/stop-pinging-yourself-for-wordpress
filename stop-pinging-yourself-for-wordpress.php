@@ -21,7 +21,7 @@ namespace ThisIsMyURL\StopPingingYourself;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION = '16.6147';
+const VERSION = '16.6148.2110';
 
 /**
  * Remove any pingback links that point back to the current site.
