@@ -3,7 +3,7 @@
  * Plugin Name:       Stop Pinging Yourself for WordPress
  * Plugin URI:        https://thisismyurl.com/plugins/stop-pinging-yourself-for-wordpress/
  * Description:       Prevents WordPress from sending self-referential pingbacks — stops the site from pinging itself when publishing posts that link to other posts on the same domain.
- * Version:           16.6148.2110
+ * Version:           16.6158.1440
  * Requires at least: 6.4
  * Requires PHP:      8.0
  * Author:            Christopher Ross
@@ -21,7 +21,7 @@ namespace ThisIsMyURL\StopPingingYourself;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION = '16.6148.2110';
+const VERSION = '16.6158.1440';
 
 /**
  * Remove any pingback links that point back to the current site.
